@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <ul>
+        <li>
+            <a href="BasicHTML.html">Home Page</a>
+        </li>
+        <li>
+            <a href="Page2.html">Page 2</a>
+        </li>
+        <li>
+            <a href="forms.html">Forms</a>
+        </li>
+    </ul>
+    
+    <form 
+    action="mailto:asd@qwerty.com"
+    method="post"
+    enctype="text/plain">
+    
+    <fieldset> 
+        <legend>Personal Details</legend>
+        
+        
+        
+        <div>
+            <label for="firtsName">First Name</label>
+            <input type="text" id="fristName" name="firtsName" placeholder="Joe">
+            
+        </div>
+        
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Borg"> 
+            
+        </div>
+        
+        <div>
+            <p>Age Group</p>
+            
+            <input type="radio" name="age" id="age1" value="1">
+            <label for="age1">15 - 18</label>
+            <br>
+            
+            <input type="radio" name="age" id="age2" value="2">
+            <label for="age2">19 - 25</label>
+            <br>
+            
+            <input type="radio" name="age" id="age3" value="3">
+            <label for="age1">26 - 40</label>
+            <br>
+            
+            <input type="radio" name="age" id="age4" value="4">
+            <label for="age2">41+</label>
+            
+        </div>
+        
+        <div>
+            <p>Gender</p>
+            
+            <input type="radio" name="gender" id="gender1" value="1">
+            <label for="gender1">Male</label>
+            <br>
+            <input type="radio" name="gender" id="gender2" value="2">
+            <label for="gender2">Female</label>
+             <br>
+        </div>
+        <br>
+
+        <div>
+        
+            <label for="date of birth">Date of Birth</label>
+            <input type="date" name="date of birth" id="date of birth">
+
+        </div>
+        
+        <div>
+          <p>Home Address</p>  
+          <label for="street">Street</label><br>
+          <input type="text" id="street" name="street" placeholder="123 Street"> <br><br>
+
+          <label for="city">Locality</label><br>
+          <input type="text" id="locality" name="locality" placeholder="Valletta"> <br><br>
+
+          <label for="post code">Post Code</label><br>
+          <input type="text" id="post code" name="post code" placeholder="VLT 1111"> <br><br>
+
+          <label for="country">Country</label><br>
+          <input type="text" id="country" name="country" placeholder="Malta"> <br><br>
+
+
+        </div>
+        
+
+        
+    </fieldset>
+    
+    <fieldset>
+        <legend>Contact Information</legend>
+        
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id=email placeholder="joeborg@gmail.com">
+        </div>
+        
+        
+        <div>
+            <label for="phone"> Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="1234 5678" pattern="[0-9]{4} [0-9]{4}">
+        </div>
+        
+        <div>
+            <label for="telephone">Telephone Number</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="1234 5678" pattern="[0-9]{4} [0-9]{04} ">
+        </div>
+        
+        <div>
+            <label for="contact">Contact Me About Offers</label>
+            <input type="checkbox" name="contact" id="contact">
+            
+        </div>
+    </fieldset>
+    
+    
+    <fieldset>
+        <legend>Message Details</legend>
+        
+        <div>
+            <label for="deparment">Department</label>
+            <select name="deparment" id="deparment">
+                 
+                <option value="" disabled selected>Please Select Department</option>    
+                <option value="1">Customer Support</option>
+                <option value="2">Technical Support</option>
+            </select>
+            
+        </div>
+        <div>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Please help?"> <br><br>
+        </div>
+        
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="I have a problem with my account..." 
+            cols="30" rows="10"></textarea> 
+            
+        </div>
+        
+    </fieldset>
+    
+    <div>
+    
+        <button type="reset">Cancel</button>
+        <button type="submit">Submit</button>
+        
+    </div>
+    
+</form>
+
+</body>
+</html>
